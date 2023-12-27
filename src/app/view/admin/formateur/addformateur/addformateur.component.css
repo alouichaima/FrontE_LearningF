@@ -1,0 +1,14 @@
+
+.form-element{
+  width: 500px;
+}
+.add-formateur-container{
+  padding: 20px;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; /* Optionnel : Pour centrer verticalement sur toute la hauteur de la vue */
+}

@@ -1,0 +1,17 @@
+<!-- message.component.html -->
+
+<div>
+  <h1>Contacter Formateur</h1>
+  <form (submit)="sendMessage()">
+    <label for="objet">Objet:</label>
+    <input type="text" id="objet" name="objet" [(ngModel)]="message.objet" required>
+    <br>
+    <label for="contenu">Contenu:</label>
+    <textarea id="contenu" name="contenu" [(ngModel)]="message.contenu" required></textarea>
+    <br>
+    <button class="btn btn-success btn-lg" type="submit">
+      Envoyer
+      <i class="fa fa-chevron-right"></i>
+    </button>
+    </form>
+</div>

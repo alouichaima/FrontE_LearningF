@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="view-account">
+    <section class="module">
+      <div class="module-inner">
+        <div class="side-bar">
+          <div class="user-info">
+            <img class="img-profile img-circle img-responsive center-block" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+            <ul class="meta list list-unstyled">
+              <li class="name">{{ user.nom }} {{ user.prenom }}
+                <label class="label label-info">{{ user.role }}</label>
+              </li>
+              <li class="email"><a href="#">{{ user.email }}</a></li>
+              <li class="activity">Last logged in: {{ user.lastLoggedIn }}</li>
+            </ul>
+          </div>
+
+        			<nav class="side-menu">
+        				<ul class="nav">
+        					<li><a href="#"><span class="fa fa-user"></span> Profile</a></li>
+        					<li><a href="#"><span class="fa fa-cog"></span> Settings</a></li>
+        					<li class="active"><a href="#"><span class="fa fa-credit-card"></span> Billing</a></li>
+        					<li><a href="/apprenant/message"><span class="fa fa-envelope"></span> Messages</a></li>
+
+        					<li><a href="user-drive.html"><span class="fa fa-th"></span> Drive</a></li>
+        					<li><a href="#"><span class="fa fa-clock-o"></span> Reminders</a></li>
+                  <li><a href="/login"><span class="fa fa-clock-o"></span> Logout</a></li>
+
+        				</ul>
+        			</nav>
+        		</div>
+        		<div class="content-panel">
+              <router-outlet></router-outlet>
+        			<div class="billing">
+
+                <form id="billing" class="form-horizontal" method="post" action="#" role="form">
+
+        				</form>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+    </div>
+</div>
