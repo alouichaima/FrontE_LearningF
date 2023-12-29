@@ -21,6 +21,10 @@ import { MessageComponent } from './view/apprenant/message/message.component';
     DeleteformateurComponent,
     ProfilLayoutComponent,
     MessageComponent,
+
+   
+   
+
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,66 @@
+
+<div class="container add-apprenant-container">
+    <div>
+      <mat-card>
+        <h3 style="text-align: center">Ajouter apprenant</h3>
+        <div>
+          <mat-form-field appearance="outline" class="form-element">
+            <mat-label>Nom</mat-label>
+            <input matInput  [(ngModel)] ="apprenantForm.nom" />
+          </mat-form-field>
+        </div>
+  
+        <div>
+          <mat-form-field appearance="outline" class="form-element">
+            <mat-label>Prenom</mat-label>
+            <input matInput [(ngModel)] ="apprenantForm.prenom"/>
+          </mat-form-field>
+        </div>
+  
+        <div>
+          <mat-form-field appearance="outline" class="form-element">
+            <mat-label>Email</mat-label>
+            <input matInput [(ngModel)] ="apprenantForm.email"/>
+          </mat-form-field>
+        </div>
+  
+        <!-- <div>
+          <mat-form-field appearance="outline" class="form-element">
+            <mat-label>Gender</mat-label>
+            <mat-select [(ngModel)] ="apprenantForm.email">
+              <mat-option value="Male">Male</mat-option>
+              <mat-option value="Female">Female</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div> -->
+        <div>
+          <mat-form-field appearance="outline" class="form-element">
+            <mat-label>Date de naissance</mat-label>
+            <input matInput  type="date" [(ngModel)] ="apprenantForm.datenaiss"/>
+          </mat-form-field>
+        </div>
+  
+            <div>
+        <mat-form-field appearance="outline" class="form-element">
+          <mat-label>Telephone</mat-label>
+          <input matInput type="tel" [(ngModel)]="apprenantForm.telephone" />
+        </mat-form-field>
+      </div>
+  
+  
+        <div>
+          <mat-form-field appearance="outline" class="form-element">
+            <mat-label>Photo</mat-label>
+            <input matInput [(ngModel)] ="apprenantForm.photo"/>
+          </mat-form-field>
+        </div>
+  
+  
+        <div class="center-button">
+          <button mat-raised-button color="primary" (click)="create()" class="btn btn-sm btn-outline-primary">Ajouter</button>
+      </div>
+  
+      </mat-card>
+    </div>
+  </div>
+  
