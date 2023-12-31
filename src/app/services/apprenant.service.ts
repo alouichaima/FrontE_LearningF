@@ -27,7 +27,7 @@ export class ApprenantService {
   getById(id: number): Observable<apprenant> {
     return this.httpClient.get<apprenant>(`http://localhost:8069/apprenant/${id}`);
   }
-
+ 
   update(payload: apprenant): Observable<apprenant> {
    return this.httpClient.put<apprenant>(
     `http://localhost:8069/apprenant/${payload.id}`,
@@ -38,6 +38,9 @@ export class ApprenantService {
   delete(id: number) {
     return this.httpClient.delete(`http://localhost:8069/apprenant/${id}`);
    }
-
-
+ 
+  
+ 
 }
+
+

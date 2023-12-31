@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { apprenant } from 'src/app/models/apprenant.model';
 import { DeleteapprenantComponent } from '../deleteapprenant/deleteapprenant.component';
 import { MatDialog } from '@angular/material/dialog';
-apprenant
+
 @Component({
   selector: 'app-listeapprenant',
   templateUrl: './listeapprenant.component.html',

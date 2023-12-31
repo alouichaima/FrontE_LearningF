@@ -1,4 +1,4 @@
-export class apprenant {
+export interface apprenant{
     id?:number;
     nom?: string;
     prenom?: string;

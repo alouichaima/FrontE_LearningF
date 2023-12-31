@@ -29,6 +29,7 @@ const routes: Routes = [
 
   {path:'apprenant',component:ProfilLayoutComponent,children:[
     {path:'message',loadChildren:()=>import('./view/apprenant/message/message.module').then(m=>m.MessageModule)},
+    {path:'profil',loadChildren:()=>import('./view/apprenant/profil/profil.module').then(m=>m.ProfilModule)},
 
 
 
