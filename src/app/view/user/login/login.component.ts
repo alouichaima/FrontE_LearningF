@@ -45,7 +45,7 @@ export class LoginComponent {
                 this.router.navigate(['/admin/dashboard']);
                 break;
               case ERole.FORMATEUR:
-                this.router.navigateByUrl('/profile');
+                this.router.navigateByUrl('/apprenant');
                 break;
               case ERole.APPRENANT:
                 this.router.navigateByUrl('/apprenant');

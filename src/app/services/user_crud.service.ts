@@ -15,5 +15,8 @@ constructor(private http:HttpClient) { }
 adduser(u:user):Observable<object>{
   return this.http.post("http://localhost:8087/utilisateur" ,u).pipe()
 }
+GetOneUser(id:any){
+  return this.http.get(`http://localhost:8069/api/auth/GetOneUser/${id}`);
+ }
 
 }

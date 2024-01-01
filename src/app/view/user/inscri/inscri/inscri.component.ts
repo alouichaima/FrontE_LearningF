@@ -41,9 +41,10 @@ export class InscriComponent {
           console.log(resultData);
           alert('User inscrie avec succées ');
         },
+       
         (error) => {
           console.error('Error during HTTP request:', error);
-          alert('Echec lors d inscription');
+          alert('Echec lors de l\'inscription: ' + error.message); // Display the error message to the user
         }
       );
   }

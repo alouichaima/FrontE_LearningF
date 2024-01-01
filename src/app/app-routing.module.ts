@@ -21,11 +21,15 @@ const routes: Routes = [
     {path:'editformateur/:id',loadChildren:()=>import('./view/admin/formateur/editformateur/editformateur.module').then(m=>m.EditformateurModule)},
     {path:'listeformateur',loadChildren:()=>import('./view/admin/formateur/listeformateur/listeformateur.module').then(m=>m.ListeformateurModule)},
     {path:'deleteformateur',loadChildren:()=>import('./view/admin/formateur/deleteformateur/deleteformateur/deleteformateur.module').then(m=>m.DeleteformateurModule)},
-
+    {path:'addapprenant',loadChildren:()=>import('./view/admin/apprenant/addapprenant/addapprenant.module').then(m=>m.AddapprenantModule)},
+    {path:'editapprenant/:id',loadChildren:()=>import('./view/admin/apprenant/editapprenant/editapprenant.module').then(m=>m.EditapprenantModule)},
+    {path:'listeapprenant',loadChildren:()=>import('./view/admin/apprenant/listeapprenant/listeapprenant.module').then(m=>m.ListeapprenantModule)},
+    {path:'deleteapprenant',loadChildren:()=>import('./view/admin/apprenant/deleteapprenant//deleteapprenant.module').then(m=>m.DeleteapprenantModule)},
   ]},
 
   {path:'apprenant',component:ProfilLayoutComponent,children:[
     {path:'message',loadChildren:()=>import('./view/apprenant/message/message.module').then(m=>m.MessageModule)},
+    {path:'profil',loadChildren:()=>import('./view/apprenant/profil/profil.module').then(m=>m.ProfilModule)},
 
 
 
