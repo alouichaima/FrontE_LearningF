@@ -14,6 +14,7 @@ import { ProfilLayoutComponent } from './layout/profil-layout/profil-layout.comp
 import { MessageComponent } from './view/apprenant/message/message.component';
 import { profilComponent } from './view/apprenant/profil/profil.component';
 import { ProfilModule } from './view/apprenant/profil/profil.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import { ProfilModule } from './view/apprenant/profil/profil.module';
     ProfilLayoutComponent,
     MessageComponent,
     profilComponent,
+   
 
    
    
