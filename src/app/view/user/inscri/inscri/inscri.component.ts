@@ -11,7 +11,7 @@ export class InscriComponent {
   prenom: string = '';
   email: string = '';
   password: string = '';
-  datenaissance: string = '';
+  datenaiss: Date | string = ''; 
   telephone: string = '';
   selectedRole: string = '';
 
@@ -23,7 +23,7 @@ export class InscriComponent {
       prenom: this.prenom,
       email: this.email,
       password: this.password,
-      datenaissance: this.datenaissance,
+      datenaiss: this.datenaiss,
       telephone: this.telephone,
       role: [this.selectedRole]
     };

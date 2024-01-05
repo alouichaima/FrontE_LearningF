@@ -18,7 +18,10 @@ export class LoginComponent {
     console.log(this.email);
     console.log(this.password);
 
+
+
     const bodyData = {
+
       email: this.email,
       password: this.password,
     };
@@ -33,9 +36,13 @@ export class LoginComponent {
           console.log("Login successful");
 
           const userRoleValue: string = resultData.userRole; 
+          const userIdValue: string = resultData.userId; 
+
+          console.log("id de l'utilisateur :", userIdValue   );
 
           if (userRoleValue !== undefined && ERole[userRoleValue as keyof typeof ERole]) {
             console.log("Rôle de l'utilisateur :", userRoleValue);
+
 
             const userRole: ERole = ERole[userRoleValue as keyof typeof ERole];
 
@@ -45,10 +52,16 @@ export class LoginComponent {
                 this.router.navigate(['/admin/dashboard']);
                 break;
               case ERole.FORMATEUR:
-                this.router.navigateByUrl('/apprenant');
-                break;
+                console.log("00000000000000000000000",resultData.id);
+
+                  this.router.navigate(['/apprenant'], { queryParams: { userid: resultData.userId } });
+                  break;
+
               case ERole.APPRENANT:
-                this.router.navigateByUrl('/apprenant');
+                console.log("111111111111111111111",resultData.userId);
+
+                  this.router.navigate(['/apprenant/profil'], { queryParams: { userid: resultData.userId } });
+                  
                 break;
               default:
                 console.error("Unknown user role or role not defined");

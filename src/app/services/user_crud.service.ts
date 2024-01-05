@@ -17,6 +17,10 @@ adduser(u:user):Observable<object>{
 }
 GetOneUser(id:any){
   return this.http.get(`http://localhost:8069/api/auth/GetOneUser/${id}`);
- }
 
+}
+updateUser(id: any, user: user): Observable<user> {
+  
+  return this.http.put<user>(`http://localhost:8080/api/auth/updateUser/${id}`, user);
+}
 }
